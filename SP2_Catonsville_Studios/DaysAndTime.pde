@@ -1,4 +1,4 @@
-//map locations: library1, commons2, dininghall3, dorm4, class5, work6
+//map locations: library1, commons2, dininghall3, dorm4, class5, work6      (commons and dhall could both be set to 2)
 //800 = 0800 as in 8:00 AM. at 2400 AKA 12:00 AM the day resets.
 //values set for timeEllapse = the amount of time the player spends each hour they click
 //on each location.
