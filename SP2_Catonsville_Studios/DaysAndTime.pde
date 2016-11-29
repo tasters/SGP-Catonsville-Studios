@@ -42,7 +42,7 @@ if(time >= 2400){
 
 if(mapLocationNumber = 0){
 text(time, 15, 25);
-text(day, 15, 45);
+text("day" + day, 15, 45);
 }
 //Above if statement only shows time if the player is at the map.
 if(screenState >= 3){
