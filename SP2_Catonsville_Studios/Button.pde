@@ -30,6 +30,13 @@ class startButtons {
       strokeWeight(5);
       fill(0, 0);
       rect(xPos, yPos, textBoxwidth, textBoxHeight);
+       if (mouseX >= xPos && mouseX <=(xPos + textBoxwidth) &&
+          mouseY >= yPos && mouseY <= (yPos + textBoxHeight)) { 
+            fill(255, 255, 15);
+            rect(xPos, yPos, textBoxwidth, textBoxHeight);
+            fill(0);
+            text(optionName, xPos, yPos, textBoxwidth, textBoxHeight);
+        }
       if (mousePressed == true) {
         if (mouseX >= xPos && mouseX <=(xPos + textBoxwidth) &&
           mouseY >= yPos && mouseY <= (yPos + textBoxHeight)) {  
