@@ -1,0 +1,52 @@
+
+class Button {
+  //Members - variables of the object the class creates.(attributes) 
+  float xPos, yPos, pWidth, pHeight, dist, text;
+
+  String diolouge;
+
+
+  //constructors - initializes the variables, or the settings of the object that the class creates.(sets up those attributes)
+  Button(float a, float b, float c, float d, float t) {
+    xPos = a;
+    yPos = b;
+    pWidth = c;
+    pHeight = d;
+    dist = sqrt((a - mouseX) * (a - mouseX) + (b - mouseY) * (b - mouseY));
+    text = t;
+  }
+  // Methods - functions of the object that the class creates.(abilities of the objects)
+  void drawRectButton() {
+    textRepo();
+    textSize(32);
+    textAlign(CENTER, CENTER);
+    fill(0);
+    text(diolouge, xPos, yPos, pWidth, pHeight);
+    if (mousePressed == true) {
+      if (mouseX >= xPos && mouseX <=(xPos + pWidth) &&
+        mouseY >= yPos && mouseY <= (yPos + pHeight)) {
+      }
+    }
+  }
+
+  void drawEllipseButton() {
+    textRepo();
+    if ((mousePressed == true) && ((pWidth + pHeight)/2 == dist)) {
+    }
+  }
+
+  void textRepo() {
+    if (text == 1) {
+      diolouge = "Start";
+    }
+    if (text == 2){
+      diolouge = "Controls";
+    }
+    if (text == 3){
+      diolouge = "Instructions";
+    }
+    if (text == 4){
+      diolouge = "Credits";
+    }
+  }
+}
