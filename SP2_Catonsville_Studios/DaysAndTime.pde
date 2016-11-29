@@ -47,6 +47,7 @@ text("day" + day, 15, 45);
 //Above if statement only shows time if the player is at the map.
 if(screenState >= 3){
      phoneUI.drawPhoneUI(phoneUIState);
+     //textfont??
      text(time, 636, 35);
      text(day, 650, 35);        //the X and Y values for these may need to change, they may not display time and day-
 }                               //-properly on phone UI.
