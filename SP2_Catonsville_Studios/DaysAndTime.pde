@@ -30,7 +30,7 @@ time = time + timeEllapse;
 
 
 //below if statement says once it = midnight the player goes to sleep and it becomes the
-//next day.. the amount of time the player sets over is added onto the next day.
+//next day.. the amount of time the player sets over is added onto the next day to 'make up for sleep'
 if(time >= 2400){
   day++;
   time = 800 + (time-2400);
