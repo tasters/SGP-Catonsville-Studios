@@ -51,8 +51,8 @@ void draw() {
   if (screenState == 0 || screenState == 1) {
     startScreen(); 
     //mainGame);
-    text(diffAdd, 250, 100);
-    text(diffSub, 500, 100);
+    //text(diffAdd, 250, 100);
+    //text(diffSub, 500, 100);
     
   }
   if (screenState == 2) {
