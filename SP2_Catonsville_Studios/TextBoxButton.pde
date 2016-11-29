@@ -116,6 +116,13 @@ class textBoxButton {
 
       break;
     }
+    if (mouseX >= xPos && mouseX <=(xPos + textBoxWidth) &&
+          mouseY >= yPos && mouseY <= (yPos + textBoxHeight)) { 
+      fill(255, 255, 15);
+      rect(xPos, yPos, textBoxWidth, textBoxHeight);
+      fill(0);
+      text(optionName, xPos, yPos, textBoxWidth, textBoxHeight);
+    }
   }
 
 
