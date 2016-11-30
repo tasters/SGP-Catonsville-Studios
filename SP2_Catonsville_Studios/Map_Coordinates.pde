@@ -1,6 +1,6 @@
 
 
-void draw(){
+//void draw(){
   
   if(mousePressed == true){       //PUT IN CORRECT X&Y FOR LIBRARY
     if(mouseX >= 300 && mouseY >= 300 && mouseX <= 500 && mouseY <= 500){
@@ -32,4 +32,4 @@ void draw(){
   
   
   
-}
+//}
