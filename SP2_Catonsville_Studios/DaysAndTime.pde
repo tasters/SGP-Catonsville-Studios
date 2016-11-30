@@ -22,7 +22,7 @@ if(mapLocationNumber == 5){
 
 //  ^^^the 3 if statements above set the amount of time the player spends in each area, we can change these later
 
-if(mapLocationNumber == mapLocationNumber+1 || mapLocationNumber == mapLocationNumber-1){
+if(mapLocationNumber == 0 || mapLocationNumber == mapLocationNumber+1 || mapLocationNumber == mapLocationNumber-1){
 time = time + timeEllapse;
 }
 
